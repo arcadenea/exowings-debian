@@ -2,25 +2,25 @@
 Repositorio de archivos varios e instrucciones para hacer funcionar Debian GNU/Linux en la notebook Exo Wings.
 
 
-EXO 2 en 1 - Wings
-
 Hardware:
-CPU: Intel(R) Atom(TM) x5-Z8300  CPU @ 1.44GHz (CherryTrail)
-RAM: 2 GB DIMM DDR3 Synchronous 1066 MHz (0,9 ns)
-Video: VGA compatible controller: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCI Configuration Registers (rev 22)
-Audio: Intel SST (modelo exacto desconocido)
-WiFi: AMPAK AP6212 - Broadcom 43438a0
-Bluetooth: AMPAK AP6212 - ?
-Touchscreen: ?
-Touchpad: 1017:1006 Speedy Industrial Supplies, Pte., Ltd
-Teclado: 1017:1006 Speedy Industrial Supplies, Pte., Ltd
-Pantalla: Resolución máxima 800x1280
-Acelerometro: ?
-Cámara delantera: ?
-Cámara trasera: ?
+=========
+- CPU: Intel(R) Atom(TM) x5-Z8300  CPU @ 1.44GHz (CherryTrail)
+- RAM: 2 GB DIMM DDR3 Synchronous 1066 MHz (0,9 ns)
+- Video: VGA compatible controller: Intel Corporation Atom/Celeron/Pentium Processor x5-E8000/J3xxx/N3xxx Series PCI Configuration Registers (rev 22)
+- Audio: Intel SST (modelo exacto desconocido)
+- WiFi: AMPAK AP6212 - Broadcom 43438a0
+- Bluetooth: AMPAK AP6212 - ?
+- Touchscreen: ?
+- Touchpad: 1017:1006 Speedy Industrial Supplies, Pte., Ltd
+- Teclado: 1017:1006 Speedy Industrial Supplies, Pte., Ltd
+- Pantalla: Resolución máxima 800x1280
+- Acelerometro: ?
+- Cámara delantera: ?
+- Cámara trasera: ?
 
 
-Instalación 
+Instalación
+=========== 
 Debian 9: La instalación de Debian 9 no debería ser problemática, bootea correctamente el Live USB y el instalador nos deja un entorno funcionando, al menos con funcionalidades mínimas (sin audio, touchscreen, wifi, cámaras, control de brillo, acelerómetro y estado de la batería).
 Para poder bootear el USB, ingresar a Windows y reiniciarlo manteniendo apretada la tecla SHIFT. De esta forma ingresará a un menú donde podremos seleccionar reiniciar a la configuración UEFI.
 
@@ -37,6 +37,7 @@ apt-get -t stretch-backports install linux-image-amd64
 
 
 WiFi
+====
 La notebook integra un adaptador SDIO combinado de Wifi+Bluetooth, un AMPAK AP6212. Debian viene con el módulo preinstalado en el kernel, pero el firmware que integra no es el correcto. Es necesario bajar el firmware desde la siguiente URL:
 
 https://github.com/arcadenea/exowings-debian/ap6212
@@ -63,25 +64,31 @@ Prestar atención a los nombres de los archivos, dependiendo de la versión del 
 
 En este caso verán que pide los archivos "brcmfmac43430a0-sdio.bin" y "brcmfmac43430a0-sdio.txt"
 
-Teclado:
+Teclado
+=======
 Funciona correctamente.
 
 
-Touchpad:
+Touchpad
+========
 Funciona correctamente.
 
 Bluetooth
+=========
 Todavía no pude hacerlo funcionar.
 
 
 Touchscreen
+===========
 Todavía no pude hacerlo funcionar.
 
 
 Audio
+=====
 Todavía no pude hacerlo funcionar.
 
 
 Pantalla
+========
 La pantalla viene por defecto configurada en modo vertical, para rotarla, podemos usar el siguiente comando: xrandr -o left
 
