@@ -18,6 +18,14 @@ Hardware:
 - Cámara delantera: ?
 - Cámara trasera: ?
 
+ICs
+===
+1x GSl3676
+1x AP6212
+1x ES8316 - EB34X405
+4x 6MP47 - D9SHD
+1x SR29Z
+1x BJT631 - 25lQ64CVIG
 
 Instalación
 =========== 
