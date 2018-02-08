@@ -20,12 +20,12 @@ Hardware:
 
 ICs
 ===
-1x GSl3676
-1x AP6212
-1x ES8316 - EB34X405
-4x 6MP47 - D9SHD
-1x SR29Z
-1x BJT631 - 25lQ64CVIG
+- 1x GSl3676
+- 1x AP6212
+- 1x ES8316 - EB34X405
+- 4x 6MP47 - D9SHD
+- 1x SR29Z
+- 1x BJT631 - 25lQ64CVIG
 
 Instalación
 =========== 
@@ -64,11 +64,11 @@ NOTA: hay dos versiones de firmware, esta notebook utiliza la versión "a0".
 
 Prestar atención a los nombres de los archivos, dependiendo de la versión del kernel pide un nombre distinto. Una forma de saber el nombre correcto es ejecutando el comando "dmesg | grep brcm" y viendo la salida:
 
-[10.674412] brcmfmac: brcmf_fw_map_chip_to_name: using brcm/brcmfmac43430a0-sdio.bin for chip 0x00a9a6(43430) rev 0x000000
-[10.674536] usbcore: registered new interface driver brcmfmac
-[10.681258] brcmfmac mmc1:0001:1: firmware: direct-loading firmware brcm/brcmfmac43430a0-sdio.bin
-[10.693967] brcmfmac mmc1:0001:1: firmware: direct-loading firmware brcm/brcmfmac43430a0-sdio.txt
-[10.786513] brcmfmac: brcmf_c_preinit_dcmds: Firmware version = wl0: Jun  6 2014 14:50:39 version 7.10.226.49 (r) FWID 01-8962686a
+- [] brcmfmac: brcmf_fw_map_chip_to_name: using brcm/brcmfmac43430a0-sdio.bin for chip 0x00a9a6(43430) rev 0x000000
+- [] usbcore: registered new interface driver brcmfmac
+- [] brcmfmac mmc1:0001:1: firmware: direct-loading firmware brcm/brcmfmac43430a0-sdio.bin
+- [] brcmfmac mmc1:0001:1: firmware: direct-loading firmware brcm/brcmfmac43430a0-sdio.txt
+- [] brcmfmac: brcmf_c_preinit_dcmds: Firmware version = wl0: Jun  6 2014 14:50:39 version 7.10.226.49 (r) FWID 01-8962686a
 
 En este caso verán que pide los archivos "brcmfmac43430a0-sdio.bin" y "brcmfmac43430a0-sdio.txt"
 
