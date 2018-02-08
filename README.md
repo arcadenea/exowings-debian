@@ -26,6 +26,7 @@ ICs
 - 4x 6MP47 - D9SHD
 - 1x SR29Z
 - 1x BJT631 - 25lQ64CVIG
+- 1x AXP288C
 
 Instalación
 =========== 
